@@ -274,14 +274,14 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1><span>📘 Tra Cứu Điểm Thi</span></h1>
+            <h1><span>📘 Tra Cứu Điểm Kiểm Tra 📘</span></h1>
             <p>Kỳ kiểm tra cuối kỳ 2 - Nhập số báo danh để xem kết quả</p>
         </div>
 
         <div class="card">
             <div class="search-section">
                 <div class="search-box">
-                    <input type="text" id="sbdInput" placeholder="🔢 Nhập số báo danh... (VD: 123)" autocomplete="off">
+                    <input type="text" id="sbdInput" placeholder="🔢 Nhập số báo danh... (VD: 109389)" autocomplete="off">
                     <button id="searchBtn">🔍 Tra cứu</button>
                 </div>
             </div>
@@ -306,7 +306,7 @@
 
         async function loadData() {
             const container = document.getElementById("resultContainer");
-            container.innerHTML = `<div class="loading">⏳ Đang tải dữ liệu từ Google Sheet...</div>`;
+            container.innerHTML = `<div class="loading">⏳ Đang tải dữ liệu...</div>`;
             
             try {
                 const response = await fetch(API_URL);
